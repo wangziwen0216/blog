@@ -26,3 +26,6 @@ Route::get('/subscribe/{channel}', 'TestController@subscribe')->name('subscribe'
 Route::get('/unsubscribe/{channel}', 'TestController@unsubscribe')->name('unsubscribe');
 
 Route::get('/publish/{channel}/{message}','TestController@publish')->name('publish');
+
+Route::resource('/user','UserController');
+
